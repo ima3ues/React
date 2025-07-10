@@ -25,6 +25,7 @@ function App() {
       <List items={fruits} category="Fruits"></List>
       {/* ** THEN BY USING THIS, WE FIND OUT THAT, THE LIST COMPONENT IS REUSABLE ON DIFFERENT CATEGORY (DON'T FIND THE NAMING IN THE LIST.JSX) */}
       <List items={vegetables} category="Vegetables"></List>
+      <List category="Vegetables"></List>
     </>
   );
 }

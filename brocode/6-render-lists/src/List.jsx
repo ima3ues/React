@@ -1,4 +1,4 @@
-function List(properties) {
+function List({ items=[], category="Category"}) {
 
     // this is not object
     // const fruits = ["apple", "orange", "banana", "coconut", "pineapple"]
@@ -75,9 +75,11 @@ function List(properties) {
 
     // ** THIS WAY IS FOR EACH LIST CAN SHARE THE LIST COMPONENT
 
-    // access properties
-    const fruits = properties.items
-    const category = properties.category
+    // // access properties
+    // const fruits = properties.items
+    // const category = properties.category
+
+    const fruits = items
 
     // filtering
     const lowCalFruits = fruits.filter(
