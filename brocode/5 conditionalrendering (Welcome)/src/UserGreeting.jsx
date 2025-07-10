@@ -1,20 +1,20 @@
 import PropTypes from 'prop-types'
 
 function UserGreeting({ isLoggedIn = false, userName = "Guest" }) {
-    // if(isLoggedIn) {
-    //     return(
-    //         <h2 className="welcome-message">
-    //             Welcome {userName}
-    //         </h2>
-    //     );
-    // }
-    // else {
-    //     return(
-    //         <h2 className="login-prompt">
-    //             Please log in to continue
-    //         </h2>
-    //     );
-    // }
+    if(isLoggedIn) {
+        return(
+            <h2 className="welcome-message">
+                Welcome {userName}
+            </h2>
+        );
+    }
+    else {
+        return(
+            <h2 className="login-prompt">
+                Please log in to continue
+            </h2>
+        );
+    }
 
     // other way (ternary operator)
     // return(
