@@ -8,6 +8,11 @@ function Counter() {
         setCount(count + 1)
     }
 
+    const incrementTwice = () => {
+        setCount(count => count + 1);
+        setCount(count => count + 1);
+    }
+
     const decrement = () => {
         setCount(count - 1)
     }
@@ -29,6 +34,9 @@ function Counter() {
             </button>
             <button className="counter-button" onClick={increment}>
                 Increment
+            </button>
+            <button className="counter-button" onClick={incrementTwice}>
+                Increment2
             </button>
         </div>
     );
