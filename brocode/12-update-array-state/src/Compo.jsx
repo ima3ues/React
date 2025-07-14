@@ -7,15 +7,15 @@ function Compo() {
     function handleAddFood(){
 
         const newFood = document.getElementById("foodInput").value;
-        document.getElementById("foodInput").value = "";
-
+        
         setFoods(f => [...f, newFood]);
+
+        document.getElementById("foodInput").value = "";
 
     }
 
     function handleRemoveFood(index){
-        
-        setFoods(foods.filter((_, i) => i !== index))
+        setFoods(foods.filter((_, i) => i !== index));
     }
 
     return(
